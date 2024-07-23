@@ -362,15 +362,15 @@ form button:hover::before {
 
 @media (max-width: 500px) {
     #hero h1 {
-        font-size: 22px;
+        font-size: 25px;
     }
 
     #hero p {
-        font-size: 18px;
+        font-size: 19px;
     }
 
     #hero .social-icons a {
-        font-size: 20px;
+        font-size: 25px;
     }
 }
 

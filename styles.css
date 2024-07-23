@@ -359,6 +359,44 @@ form button:hover::before {
     object-fit: cover;
 }
 
+/* Home Section */
+
+#home {
+    background: url("image.jpg") center/cover no-repeat;
+    color: #ffffff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+#home .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#home .card {
+    width: 300px;
+    padding: 20px;
+    background: #333333;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    #home .card-container {
+        max-width: 100%;
+    }
+
+    #home .card {
+        width: 100%;
+    }
+}
+
 /* Page Transition */
 .fade-out {
     opacity: 0;

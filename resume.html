@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Arsenii Cherednichenko</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="page-background">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="resume">
+        <div class="container">
+            <h2>Resume</h2>
+            <div class="resume-content">
+                <h3>Arsenii Cherednichenko</h3>
+                <div class="contact-info">
+                    <i class="fas fa-phone-alt"></i> +49 152 5298 3263
+                </div>
+                <div class="contact-info">
+                    <i class="fas fa-envelope"></i> <a href="mailto:arsenii.cherednichenko@cosmopolitanschool.eu">arsenii.cherednichenko@cosmopolitanschool.eu</a>
+                </div>
+
+                <h4>Skills</h4>
+                <ul>
+                    <li>Agile Methodologies (Scrum / Kanban)</li>
+                    <li>C++, Python, Swift, HTML, CSS, JavaScript, Pascal</li>
+                    <li>Git / GitHub</li>
+                    <li>MS Office</li>
+                    <li>Strategy developing</li>
+                </ul>
+
+                <h4>Languages</h4>
+                <div class="language-skill">
+                    <p>English</p>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 90%;"></div>
+                        <div class="language-level">Fluent</div>
+                    </div>
+                </div>
+                <div class="language-skill">
+                    <p>German</p>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 75%;"></div>
+                        <div class="language-level">Advanced</div>
+                    </div>
+                </div>
+                <div class="language-skill">
+                    <p>Ukrainian</p>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 100%;"></div>
+                        <div class="language-level">Mother Tongue</div>
+                    </div>
+                </div>
+                <div class="language-skill">
+                    <p>Russian</p>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 95%;"></div>
+                        <div class="language-level">Fluent</div>
+                    </div>
+                </div>
+
+                <h4>Education</h4>
+                <div class="education">
+                    <ul>
+                        <li>
+                            Berlin Cosmopolitan School
+                            <span>2022 - today</span>
+                        </li>
+                        <li>
+                            Lyceum of Physics and Mathematics No. 27 - Kharkiv
+                            <span>2019 - 2022</span>
+                        </li>
+                        <li>
+                            Kharkiv Specialized School No. 33 with profound study of the English language
+                            <span>2015 - 2019</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <h4>Experience</h4>
+                <div class="experience">
+                    <ul>
+                        <li>
+                            <strong>Accenture Technology Solutions B.V. & Co. KG</strong><br>
+                            Internship, 01.07.2024 - 12.07.2024
+                        </li>
+                    </ul>
+                </div>
+
+                <button onclick="downloadCV()">Download PDF</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Arsenii Cherednichenko</p>
+    </footer>
+    <script>
+        function downloadCV() {
+            const link = document.createElement('a');
+            link.href = 'assets/CV.pdf';
+            link.download = 'Arsenii_Cherednichenko_CV.pdf';
+            link.click();
+        }
+    </script>
+</body>
+</html>

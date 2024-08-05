@@ -380,3 +380,177 @@ form button:hover::before {
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
 }
+
+/* Resume Section */
+#resume {
+    padding: 60px 20px;
+    background: rgba(0, 0, 0, 0.7); /* Dark background for contrast */
+    color: #ffffff; /* Light text */
+    text-align: center;
+}
+
+.resume-content {
+    max-width: 800px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.resume-content h3 {
+    font-size: 2em;
+    color: #f39c12; /* Orange color for headings */
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.resume-content h4 {
+    font-size: 1.5em;
+    color: #f39c12; /* Orange color for subheadings */
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: left; /* Align subheadings to the left */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #f39c12; /* Orange underline */
+    padding-bottom: 5px;
+}
+
+.resume-content ul {
+    list-style: disc; /* Use bullet points */
+    padding-left: 20px; /* Add padding to the left for better alignment */
+    text-align: left; /* Align list items to the left */
+}
+
+.resume-content ul li {
+    margin: 10px 0;
+    font-size: 1.1em; /* Slightly larger font size for better readability */
+}
+
+.resume-content .contact-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    font-size: 1.1em; /* Slightly larger font size for better readability */
+}
+
+.resume-content .contact-info i {
+    margin-right: 10px;
+}
+
+.resume-content .contact-info a {
+    color: #f39c12; /* Different color for email link */
+    text-decoration: none;
+}
+
+.resume-content .contact-info a:hover {
+    color: #e67e22; /* Darker orange on hover */
+}
+
+.resume-content .language-skill {
+    margin: 20px 0;
+    text-align: left; /* Align language skill section to the left */
+}
+
+.resume-content .language-skill p {
+    margin: 0;
+    font-size: 1.2em; /* Slightly larger font size for language names */
+    font-weight: bold; /* Bold font for language names */
+}
+
+.resume-content .progress {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    height: 20px;
+    width: 100%;
+    margin: 10px 0;
+    position: relative;
+}
+
+.resume-content .progress-bar {
+    height: 100%;
+    background-color: #f39c12;
+}
+
+.resume-content .language-level {
+    text-align: center;
+    font-size: 0.9em;
+    color: #f39c12; /* Orange color for level text */
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    line-height: 20px; /* Center text vertically within the bar */
+}
+
+.resume-content .education {
+    position: relative;
+    margin: 20px 0;
+}
+
+.resume-content .education ul {
+    position: relative;
+    padding-left: 20px;
+}
+
+.resume-content .education ul::before {
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #f39c12; /* Orange line */
+}
+
+.resume-content .education ul li {
+    margin: 20px 0;
+    position: relative;
+    font-size: 1.1em; /* Slightly larger font size for better readability */
+}
+
+.resume-content .education ul li::before {
+    content: '\f0da'; /* Font Awesome arrow icon */
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    left: -25px;
+    color: #f39c12; /* Orange color for arrow */
+}
+
+.resume-content .experience ul {
+    list-style: none;
+    padding: 0;
+    text-align: left; /* Align list items to the left */
+}
+
+.resume-content .experience ul li {
+    margin: 10px 0;
+    font-size: 1.1em; /* Slightly larger font size for better readability */
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.3); /* Semi-transparent background for experience items */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Download Button */
+.resume-content button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    background: #f39c12; /* Orange background */
+    color: #ffffff; /* White text */
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.resume-content button:hover {
+    background: #e67e22; /* Darker orange on hover */
+}

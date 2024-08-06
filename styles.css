@@ -33,6 +33,7 @@ nav ul {
     justify-content: center;
     background: #ffffff; /* Light background */
     border-radius: 0 0 10px 10px;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
 nav ul li {
@@ -436,6 +437,7 @@ form button:hover::before {
     justify-content: center;
     margin: 10px 0;
     font-size: 1.1em; /* Slightly larger font size for better readability */
+    word-wrap: break-word; /* Ensure email wraps if too long */
 }
 
 .resume-content .contact-info i {
@@ -443,12 +445,13 @@ form button:hover::before {
 }
 
 .resume-content .contact-info a {
-    color: #f39c12; /* Different color for email link */
+    color: #e67e22; /* Different color for email link */
     text-decoration: none;
+    word-break: break-all; /* Allow breaking long words */
 }
 
 .resume-content .contact-info a:hover {
-    color: #e67e22; /* Darker orange on hover */
+    color: #d35400; /* Darker orange on hover */
 }
 
 .resume-content .language-skill {
@@ -466,7 +469,7 @@ form button:hover::before {
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 5px;
     overflow: hidden;
-    height: 20px;
+    height: 30px; /* Increase height for better readability */
     width: 100%;
     margin: 10px 0;
     position: relative;
@@ -475,46 +478,57 @@ form button:hover::before {
 .resume-content .progress-bar {
     height: 100%;
     background-color: #f39c12;
+    position: relative;
 }
 
 .resume-content .language-level {
     text-align: center;
-    font-size: 0.9em;
-    color: #f39c12; /* Orange color for level text */
+    font-size: 1em;
+    color: #ffffff; /* White color for level text */
     position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-    line-height: 20px; /* Center text vertically within the bar */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2px 5px;
 }
 
-.resume-content .education {
+/* Education and Experience with arrows */
+.resume-content .education,
+.resume-content .experience {
     position: relative;
     margin: 20px 0;
+    padding-left: 20px;
+    text-align: left;
 }
 
-.resume-content .education ul {
+.resume-content .education ul,
+.resume-content .experience ul {
     position: relative;
     padding-left: 20px;
+    list-style: none; /* Remove default bullet points */
 }
 
-.resume-content .education ul::before {
+.resume-content .education ul::before,
+.resume-content .experience ul::before {
     content: '';
     position: absolute;
-    left: 10px;
+    left: 0;
     top: 0;
     bottom: 0;
     width: 2px;
     background-color: #f39c12; /* Orange line */
 }
 
-.resume-content .education ul li {
+.resume-content .education ul li,
+.resume-content .experience ul li {
     margin: 20px 0;
     position: relative;
     font-size: 1.1em; /* Slightly larger font size for better readability */
+    padding-left: 20px; /* Space for arrows */
 }
 
-.resume-content .education ul li::before {
+.resume-content .education ul li::before,
+.resume-content .experience ul li::before {
     content: '\f0da'; /* Font Awesome arrow icon */
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
@@ -523,19 +537,61 @@ form button:hover::before {
     color: #f39c12; /* Orange color for arrow */
 }
 
-.resume-content .experience ul {
-    list-style: none;
-    padding: 0;
-    text-align: left; /* Align list items to the left */
+.resume-content .education ul li span,
+.resume-content .experience ul li span {
+    font-size: 0.9em; /* Smaller font for dates */
+    color: #e67e22; /* Slightly darker orange for dates */
+    display: block; /* Ensure dates are on a new line */
+    margin-top: 5px;
 }
 
-.resume-content .experience ul li {
-    margin: 10px 0;
-    font-size: 1.1em; /* Slightly larger font size for better readability */
-    padding: 10px;
-    background: rgba(0, 0, 0, 0.3); /* Semi-transparent background for experience items */
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+/* Responsive Design */
+@media (max-width: 768px) {
+    .resume-content {
+        padding: 20px;
+    }
+    
+    .resume-content h3 {
+        font-size: 1.5em;
+        word-break: break-word; /* Ensure long emails wrap */
+    }
+
+    .resume-content h4 {
+        font-size: 1.2em;
+    }
+
+    .resume-content ul li {
+        font-size: 1em;
+    }
+
+    .resume-content .contact-info {
+        flex-direction: column;
+        font-size: 1em;
+        word-break: break-word; /* Ensure long emails wrap */
+    }
+
+    .resume-content .language-skill p {
+        font-size: 1em;
+    }
+
+    .resume-content .language-level {
+        line-height: 30px; /* Adjusted for responsive */
+    }
+
+    .resume-content .education ul::before,
+    .resume-content .experience ul::before {
+        left: 0;
+    }
+
+    .resume-content .education ul li::before,
+    .resume-content .experience ul li::before {
+        left: -20px;
+    }
+
+    .resume-content .education,
+    .resume-content .experience {
+        padding-left: 10px;
+    }
 }
 
 /* Download Button */

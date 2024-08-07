@@ -77,6 +77,7 @@ nav ul li a:hover {
     background: linear-gradient(135deg, #ff6f61, #ffb74d); /* Orange gradient */
     position: relative;
     flex: 1; /* Allow the background to expand and contract with content */
+    overflow: hidden; /* Ensure shapes do not overflow */
 }
 
 /* Ensuring full-height and allowing scroll */

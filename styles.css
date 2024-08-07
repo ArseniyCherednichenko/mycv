@@ -75,18 +75,32 @@ nav ul li a:hover {
 /* Global Background with Orange Gradient and Shapes */
 .page-background {
     background: linear-gradient(135deg, #ff6f61, #ffb74d); /* Orange gradient */
+    height: auto;
+    min-height: 100vh;
     position: relative;
     flex: 1; /* Allow the background to expand and contract with content */
-    overflow: hidden; /* Ensure shapes do not overflow */
+    display: flex; /* Enable scrolling */
+    flex-direction: column; /* Align shapes vertically */
+    overflow-x: hidden; /* Hide horizontal overflow */
 }
 
-/* Ensuring full-height and allowing scroll */
 .page-background::before,
 .page-background::after {
     content: '';
     position: absolute;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.2);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw; /* Adjust the width and height to control shape size */
+    height: 100vh;
+    z-index: -1; /* Ensure shapes are behind content */
+}
+
+.page-content {
+    flex-grow: 1; /* Allow content to take up remaining space */
+    overflow-y: auto; /* Enable vertical scrolling */
 }
 
 .page-background::before {

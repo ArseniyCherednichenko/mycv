@@ -106,16 +106,16 @@ nav ul li a:hover {
 }
 
 .page-background::before {
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     top: 10%;
     left: 10%;
     animation: moveShape 15s linear infinite;
 }
 
 .page-background::after {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     bottom: 10%;
     right: 10%;
     animation: moveShape 20s linear infinite;

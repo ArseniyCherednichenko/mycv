@@ -74,6 +74,7 @@ nav ul li a:hover {
 
 /* Global Background with Orange Gradient and Shapes */
 .page-background {
+    overflow-x: hidden; /* Hide horizontal overflow */
     background: linear-gradient(135deg, #ff6f61, #ffb74d); /* Orange gradient */
     height: auto;
     min-height: 100vh;
@@ -81,7 +82,6 @@ nav ul li a:hover {
     flex: 1; /* Allow the background to expand and contract with content */
     display: flex; /* Enable scrolling */
     flex-direction: column; /* Align shapes vertically */
-    overflow-x: hidden; /* Hide horizontal overflow */
     overflow-y: auto; /* Enable vertical scrolling with auto overflow */
     width: 100%; /* Ensure the background takes up the full width of the screen */
 }

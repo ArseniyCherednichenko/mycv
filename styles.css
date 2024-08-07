@@ -1,6 +1,7 @@
 /* Reset and Base Styles */
 body {
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden; 
     font-weight: 300; /* Thin font weight */
     min-height: 100vh;
     margin: 0;

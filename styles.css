@@ -83,6 +83,7 @@ nav ul li a:hover {
     flex-direction: column; /* Align shapes vertically */
     overflow-x: hidden; /* Hide horizontal overflow */
     overflow-y: auto; /* Enable vertical scrolling with auto overflow */
+    width: 100%; /* Ensure the background takes up the full width of the screen */
 }
 
 .page-background::before,

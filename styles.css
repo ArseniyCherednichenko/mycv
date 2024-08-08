@@ -15,6 +15,8 @@ body {
 
 /* Header and Navigation */
 header {
+    width: 100%;
+    overflow-x: hidden;
     background: #ffffff; /* Light background */
     color: #333; /* Dark text */
     padding: 15px 0;
@@ -35,6 +37,8 @@ nav ul {
     background: #ffffff; /* Light background */
     border-radius: 0 0 10px 10px;
     flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    width: 100%;
+    overflow-x: hidden;
 }
 
 nav ul li {
@@ -51,6 +55,8 @@ nav ul li a {
     border-radius: 5px;
     position: relative;
     transition: color 0.3s;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 nav ul li a::before {
@@ -100,12 +106,16 @@ nav ul li a:hover {
     width: 100vw; /* Adjust the width and height to control shape size */
     height: 100vh;
     z-index: -1; /* Ensure shapes are behind content */
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .page-content {
     overflow-x: hidden;
     flex-grow: 1; /* Allow content to take up remaining space */
     overflow-y: auto; /* Enable vertical scrolling */
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .page-background::before {
@@ -150,6 +160,8 @@ nav ul li a:hover {
     color: #ffffff; /* Light text */
     position: relative;
     padding: 20px; /* Add padding to avoid content being too close to edges */
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .hero-content {
@@ -159,16 +171,22 @@ nav ul li a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     max-width: 800px;
     margin: auto; /* Center horizontally */
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .hero-content h1 {
     font-size: 2.5em; /* Adjusted size */
     margin-bottom: 10px;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .hero-content p {
     font-size: 1.2em; /* Adjusted size */
     margin: 0;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .social-icons {
@@ -180,6 +198,8 @@ nav ul li a:hover {
     font-size: 1.5em;
     margin: 0 10px;
     transition: color 0.3s;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .social-icons a:hover {
@@ -199,6 +219,8 @@ nav ul li a:hover {
     flex-direction: column;
     align-items: center;
     gap: 20px; /* Space between image and text */
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .info-card img {
@@ -207,18 +229,24 @@ nav ul li a:hover {
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid #f39c12; /* Orange border */
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .info-card h2 {
     margin: 0;
     font-size: 1.5em;
     color: #f39c12; /* Orange color for heading */
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .info-card p {
     margin: 5px 0 0;
     font-size: 1em;
     color: #333; /* Dark text */
+    width: 100%;
+    overflow-x: hidden;
 }
 
 /* About Section */
@@ -228,6 +256,8 @@ nav ul li a:hover {
     color: #ffffff; /* Light text */
     border-bottom: 1px solid #ddd; /* Light border */
     text-align: center; /* Center text */
+    width: 100%;
+    overflow-x: hidden;
 }
 
 #about .profile {
@@ -237,6 +267,8 @@ nav ul li a:hover {
     gap: 20px; /* Space between image and text */
     max-width: 800px;
     margin: auto; /* Center horizontally */
+    width: 100%;
+    overflow-x: hidden;
 }
 
 #about img {
@@ -245,12 +277,16 @@ nav ul li a:hover {
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid #f39c12; /* Orange border */
+    width: 100%;
+    overflow-x: hidden;
 }
 
 
 #about p {
     font-size: 1em; /* Adjusted size */
     line-height: 1.6;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 /* Footer */
@@ -262,6 +298,8 @@ footer {
     margin-top: auto;
     border-top: 1px solid #ddd; /* Light border */
     flex-shrink: 0; /* Prevent the footer from shrinking */
+    width: 100%;
+    overflow-x: hidden;
 }
 
 /* Form and Contact Button */
@@ -272,6 +310,8 @@ form {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px; /* Add some spacing around the form */
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .form-group {
@@ -287,6 +327,8 @@ form textarea {
     border-radius: 5px;
     box-sizing: border-box;
     font-size: 1em;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 form input:focus,
@@ -305,6 +347,8 @@ form button {
     position: relative;
     overflow: hidden;
     transition: background 0.3s;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 form button::before {
@@ -349,6 +393,8 @@ form button:hover::before {
     background: rgba(0, 0, 0, 0.7); /* Dark background for contrast */
     color: #ffffff; /* Light text */
     padding: 60px 20px;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 #contact {

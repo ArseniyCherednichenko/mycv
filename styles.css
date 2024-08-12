@@ -77,9 +77,9 @@ nav ul li a:hover {
     background: linear-gradient(135deg, #ff6f61, #ffb74d); /* Orange gradient */
     position: relative;
     flex: 1; /* Allow the background to expand and contract with content */
-    overflow: hidden; /* Ensure shapes do not overflow */
-    clip-path: inset(0); /* Clip content that goes outside this element */
+    overflow: visible; /* Allow content to overflow */
 }
+
 
 /* Ensuring full-height and allowing scroll */
 .page-background::before,
@@ -89,35 +89,6 @@ nav ul li a:hover {
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.2);
     overflow: hidden; /* Ensure shapes do not overflow */
-}
-
-.page-background::before {
-    width: 200px;
-    height: 200px;
-    top: 10%;
-    left: 10%;
-    animation: moveShape 15s linear infinite;
-}
-
-.page-background::after {
-    width: 300px;
-    height: 300px;
-    bottom: 10%;
-    right: 10%;
-    animation: moveShape 20s linear infinite;
-}
-
-
-@keyframes moveShape {
-    0% {
-        transform: translate(0, 0);
-    }
-    50% {
-        transform: translate(200px, 200px);
-    }
-    100% {
-        transform: translate(0, 0);
-    }
 }
 
 /* Hero Section */

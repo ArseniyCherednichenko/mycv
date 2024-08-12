@@ -77,9 +77,84 @@ nav ul li a:hover {
     background: linear-gradient(135deg, #ff6f61, #ffb74d); /* Orange gradient */
     position: relative;
     flex: 1; /* Allow the background to expand and contract with content */
-    overflow: visible; /* Allow content to overflow */
+    overflow: visible; /* Hide overflow to keep shapes within bounds */
 }
 
+/* Shape Positioning and Animation for Larger Screens */
+.page-background::before,
+.page-background::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    overflow: hidden; /* Ensure shapes do not overflow */
+    animation: moveShapeLarge 15s linear infinite; /* Default animation */
+}
+
+/* Shape Sizes and Positions */
+.page-background::before {
+    width: 150px;
+    height: 150px;
+    top: 20%;
+    left: 15%;
+}
+
+.page-background::after {
+    width: 250px;
+    height: 250px;
+    bottom: 20%;
+    right: 15%;
+}
+
+
+/* Shape Animations for Larger Screens */
+@keyframes moveShapeLarge {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(200px, 200px); /* Larger range for larger screens */
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+/* Shape Animations for Small Screens */
+@keyframes moveShapeSmall {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(30px, 30px); /* Smaller range for smaller screens */
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+    .page-background::before,
+    .page-background::after {
+        animation: moveShapeSmall 10s linear infinite; /* Smaller movement range */
+    }
+
+    /* Adjust positioning and size for small screens */
+    .page-background::before {
+        top: 30%; /* Adjusted top positioning */
+        left: 20%; /* Adjusted left positioning */
+        width: 100px; /* Smaller size */
+        height: 100px;
+    }
+
+    .page-background::after {
+        bottom: 30%; /* Adjusted bottom positioning */
+        right: 20%; /* Adjusted right positioning */
+        width: 150px; /* Smaller size */
+        height: 150px;
+    }
+}
 
 /* Ensuring full-height and allowing scroll */
 .page-background::before,

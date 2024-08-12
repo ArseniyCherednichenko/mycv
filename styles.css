@@ -88,22 +88,21 @@ nav ul li a:hover {
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.2);
     overflow: hidden; /* Ensure shapes do not overflow */
-    animation: moveShapeLarge 15s linear infinite; /* Default animation */
+    animation: moveShapeLarge 20s linear infinite; /* Default animation */
 }
 
-/* Shape Sizes and Positions */
 .page-background::before {
-    width: 150px;
-    height: 150px;
-    top: 20%;
-    left: 15%;
+    width: 200px;
+    height: 200px;
+    top: 10%;
+    left: 10%;
 }
 
 .page-background::after {
-    width: 250px;
-    height: 250px;
-    bottom: 20%;
-    right: 15%;
+    width: 300px;
+    height: 300px;
+    bottom: 10%;
+    right: 10%;
 }
 
 
@@ -126,7 +125,7 @@ nav ul li a:hover {
         transform: translate(0, 0);
     }
     50% {
-        transform: translate(30px, 30px); /* Smaller range for smaller screens */
+        transform: translate(50px, 50px); /* Smaller range for smaller screens */
     }
     100% {
         transform: translate(0, 0);

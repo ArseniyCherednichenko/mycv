@@ -112,7 +112,7 @@ nav ul li a:hover {
         transform: translate(0, 0);
     }
     50% {
-        transform: translate(200px, 200px); /* Larger range for larger screens */
+        transform: translate(150px, 150px); /* Larger range for larger screens */
     }
     100% {
         transform: translate(0, 0);
@@ -388,6 +388,7 @@ form button:hover::before {
     gap: 20px; /* Space between project cards */
 }
 
+/* Project Card Styling */
 .project-card {
     background: #ffffff; /* White background */
     color: #333; /* Dark text */
@@ -404,12 +405,38 @@ form button:hover::before {
     box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
 }
 
-.project-card img {
-    width: 100%;
-    border-radius: 8px;
-    object-fit: cover;
+/* Video Container */
+.video-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ddd;
 }
 
+/* Video Element */
+video {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between project cards */
+}
+
+/* Project Description */
+.project-card p {
+    font-family: 'Montserrat', sans-serif;
+    color: #555;
+    line-height: 1.7;
+    font-size: 15px;
+    margin-top: 15px;
+}
 
 @media (max-width: 500px) {
     #hero h1 {

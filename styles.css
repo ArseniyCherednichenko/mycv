@@ -1,3 +1,8 @@
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
 /* Reset and Base Styles */
 body {
     font-family: 'Montserrat', sans-serif;
@@ -23,6 +28,11 @@ header {
     z-index: 1000;
     border-bottom: 1px solid #ddd; /* Light border */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+nav {
+    position: sticky;
+    top: 0;
 }
 
 nav ul {
@@ -397,7 +407,7 @@ form button:hover::before {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     width: 300px;
     text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .project-card:hover {
